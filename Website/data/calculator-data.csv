@@ -1,0 +1,86 @@
+Description of Factor,Value,Unit,Assumptions
+Pounds of CO2 emitted per gallon,19.6,lbs CO2/gallon,"A gallon of gasoline is assumed to produce 8.887 kilograms (or 19.6 pounds) of CO2. This gasoline factor is from a recent regulation establishing GHG standards for model year 2012- 2016 vehicles (75 FR 25324, May 7, 2010)."
+Ratio of emissions of greenhouse gases other than CO2,1.01,lbCO2e/lbCO2,"In addition to carbon dioxide, automobiles produce methane (CH4) and nitrous oxide (N2O) from the tailpipe, as well as HFC emissions from leaking air conditioners. The emissions of CH4 and N2O are related to vehicle miles traveled rather than fuel consumption, and the emissions of CH4, N2O, and HFCs are not as easily estimated from a vehicle as for CO2. On average, CO2 emissions represent 95-99% of the total greenhouse gas emissions from a passenger vehicle. CH4, N2O, and HFC emissions represent roughly 1-5% of the total greenhouse gas emissions from passenger vehicles, after accounting for the global warming potential of each greenhouse gas. To simplify this estimate, it is assumed that CH4, N2O, and HFCs account for 1.5 percent of emissions, and the CO2 estimate was multiplied by 100/98.65 to incorporate the contribution of the other greenhouse gases. These percentages are estimated from the EPA Inventory of U.S. Greenhouse Gas Emissions and Sinks: 1990 - 2011."
+Passenger Vehicle Fuel Economy,21.6,miles per gallon (mpg),
+Average miles traveled per year per vehicle,11398,miles per year,219 miles per week
+Average emissions for a typical vehicle,10484,lbs CO2e/vehicle,"(1/21.6 mpg)*11,398 miles/year*19.6 lbs CO2/gallon*CO2e / CO2"
+Average monthly consumption of natural gas,"5,500",cubic feet of natural gas/household,"Average monthly consumption of 5,500 cubic feet of gas, or average annual consumption of 66 thousand cubic feet per household. Average household size is 2.57."
+Price per thousand cubic feet of natural gas,$10.68,dollars/1000 cubic feet,
+Average cost of natural gas,$1.04,dollars/therm,
+Carbon coefficient of natural gas,14.46,Tg C/QBtu ,116.89 lbs CO2/MMBtu
+Emission factor (natural gas/therm),11.7,lbs CO2/therm natural gas,
+Emission factor (natural gas/thousand cubic feet),119.58,lbs CO2/1000 cubic feet of natural gas,Carbon coefficient of natural gas * ratio of CO2 to carbon * energy content of natural gas * lbs to teragrams conversion * QBtu/1015Btu
+Average annual CO2 emissions from natural gas per household,"7,892",lbs CO2/household (natural gas),"Typical annual CO2 emissions of about 7,900 pounds per household based on national average monthly consumption of 5,500 cubic feet of gas."
+Average annual CO2 emissions from natural gas per household of one person,"3,071",lbs CO2/year/person,Average emissions per household/average household size. Assumes average household size of 2.57.
+Average monthly cost of natural gas per household of one person,$22.86,dollars/month/person,Average monthly natural gas consumption/average household size*price per thousand cubic feet of natural gas/1000. Assumes average household size of 2.57.
+Average monthly electricity consumption per household,943,kWh/month/household,"Average annual electricity consumption is 11,320 kWh per household, or 943 kWh per month per household. Average household size is 2.57."
+Average US price per kWh,$0.12,dollars/kWh,
+Electricity emissions factors are categorized by geographic subregion: see EGRID_DATA.,See Emission_Factors tab ,lbs CO2e/kWh,varies by subregion
+Average annual CO2e emissions from electricity per household,14020,lbs CO2e/household (electricity),"Typical annual CO2 emissions are 14,020 pounds per household, assuming approximately 943 kWh per month."
+Average annual CO2e emissions from electricity per household of one person,,lbs CO2e/year/person,Average emissions per household/average household size. Assumes average household size of 2.57.
+Average montly cost of electricity per household of one person,$43.61,dollars/month/person,Average monthly electricity consumption/average household size*price per kWh of electricity. Assumes average household size of 2.57.
+Average monthly consumption of fuel oil per household,46,gallons of fuel oil/month,"Average monthly consumption of 46 gallons of fuel oil, based on annual average consumption of 551 gallons of fuel oil per household per year. Average household size is 2.57."
+Average price per gallon of fuel oil,$4.02,dollars/gallon,
+Carbon coefficient of fuel oil ,20.17,Tg C/QBtu ,
+Fuel oil emission factor (pounds of CO2/gallon fuel oil),22.61,lbs CO2/gallon of fuel oil,Carbon coefficient of fuel oil * ratio of CO2 to carbon * energy content of fuel oil * lbs to teragrams conversion * QBtu/1015Btu
+Fuel oil emission factor (pounds of CO2/MMBtu fuel oil),163.05,lbs CO2/MMBtu,lbs CO2/gallon * Btu/gallon * Btu to MMBtu conversion
+Average annual CO2 emissions from fuel oil per household,"12,460",lbs CO2/household (fuel oil),"Typical annual CO2 emissions of 12,460 pounds per household based on national average monthly consumption of 42 gallons of oil."
+Average annual CO2 emissions from fuel oil per household of one person,"4,848",lbs CO2/year/person,Average emissions per household/average household size. Assumes average household size of 2.57.
+Average monthly cost of fuel oil per household of one person,$71.82,dollars/year/person,Average monthly fuel oil consumption/average household size*price per gallon of fuel oil. Assumes average household size of 2.57.
+Average monthly consumption of propane (LPG) per household,39,gallons of oil/month,"Average monthly consumption of 39 gallons of propane per month, based on annual average consumption of 464 gallons of propane per household per year. Average household size is 2.57."
+Price per gallon of propane,$2.47,dollars/gallon propane,
+Carbon coefficient for propane,16.83,Tg C/QBtu ,136.05 lbs CO2/MMBtu
+Propane emission factor (pounds of CO2/gallon propane),12.43,lbs CO2/gallon propane,Carbon coefficient of propane * ratio of CO2 to carbon * energy content of propane * lbs to teragrams conversion * QBtu/1015Btu
+Average annual emissions from propane per household,"5,766",lbs CO2/household (propane),"Typical annual CO2 emissions of 5,766 pounds per household based on national average monthly consumption of 39 gallons of propane."
+Average annual emissions from propane per household of one person,"2,243",lbs CO2/year/person,Average emissions per household/average household size. Assumes average household size of 2.57.
+Average monthly cost of propane per household of one person,$37.16,dollars/year/person,Average monthly propane consumption/average household size*price per gallon of propane. Assumes average household size of 2.57.
+Average lbs CO2 equivalent generated from waste per person per year,692,lbs CO2e/year/person from waste,
+Average number of pounds of CO2 equivalent per person per year that could be saved by recycling metal,-89.38,lbs CO2e/year/person avoided from recycling metal,"Calculations assume that it would be possible for households to recycle 100 percent of all recyclable materials generated as waste. The plastic material type used in the calculator includes PET and HDPE, and the metal material type includes aluminum and steel cans."
+Average number of pounds of CO2 equivalent per person per year that could be saved by recycling plastic,-35.56,lbs CO2e/year/person avoided from recycling plastic,"Carbon dioxide equivalent emissions associated with household waste management were calculated using the total emissions for landfills (including incineration, landfill gas-to- energy projects, oxidation, and flaring) and the United States population estimates from EPA's Inventory of U.S. Greenhouse Gas Emissions and Sinks, 1990-2011. The emission factors for each material type were developed by EPA and presented in the Agency's report on greenhouse gas emissions from waste management and in the online WAste Reduction Model (WARM). These emission factors take into account the full material life cycle; i.e., not only emissions at the landfill, but also emissions and sequestration associated with production, manufacturing, remanufacturing, forest carbon storage due to reduced harvests, etc. The emission factor used for recycling materials in this calculator compares greenhouse gas emissions from recycling with those attributable to landfilling. This approach enables policy makers to evaluate, on a per-ton basis, the overall difference in greenhouse gas emissions between (1) recycling 1 ton of material and (2) manufacturing and then managing (post-consumer) 1 ton of the same material. Source: U.S. Environmental Protection Agency, 2011. Solid Waste Management and Greenhouse Gases: A Life-Cycle Assessment of Emissions and Sinks, EPA530-R-06-004. WARM is available in the Tools section of the Waste section of this Web site."
+Average number of pounds of CO2 equivalent per person per year that could be saved by recycling glass,-25.39,lbs CO2e/year/person avoided from recycling glass,
+Average number of pounds of CO2 equivalent per person per year that could be saved by recycling newspaper,-113.14,lbs CO2e/year/person avoided from recycling newspaper,
+Average number of pounds of CO2 equivalent per person per year that could be saved by recycling magazines,-27.46,lbs CO2e/year/person avoided from recycling magazines,
+Average total emissions for household of one person,,lbs CO2e/year,"The ""average"" figure here is the sum of the average values given above, excluding fuel oil and propane."
+Average variable cost per mile to drive ,0.1964,dollars/mile,
+Increase in fuel efficiency from performing regular maintenance on your vehicles ,0.04,%,"Properly inflating tires: Assumes an increase in fuel efficiency of 3 percent. Keeping your engine properly tuned: Assumes an increase in fuel efficiency of 4 percent. Source: Environmental Protection Agency and Department of Energy, Fuel Economy Website, 2011."
+Price per gallon of gasoline,$3.68,dollars/gallon gasoline,
+Savings per degree of setback (heating season),3%,%,
+Percentage of natural gas allotted to heating ,0.63,%,"2,873 billion cubic feet of natural gas consumed for space heating/4,580 billion cubic feet total natural gas consumption"
+Percentage of electricity source allotted to heating ,0.09,%,"120 billion kWh of electricity consumed for space heating/1,286 billion kWh total electricity consumption"
+Percentage of fuel oil source allotted to heating ,0.87,%,"3,675 million gallons of fuel oil consumed for space heating/4,214 million gallons total fuel oil consumption"
+Percentage of propane source allotted to heating ,0.70,%,"3,754 million gallons of LPG (propane) consumed for space heating/5,384 million gallons total LPG consumption"
+Percent of total electricity emissions accounted for by air conditioning ,0.14,%,"186 billion kWh of electricity consumed for air conditioning/1,286 billion kWh total electricity consumption"
+Savings per degree of setback (cooling season) ,6%,%,
+Annual energy savings from enabling sleep feature on computer and monitor ,107.1, kWh,Enabling your computer's power management features can save between 38 and 187 kWh per year.
+"Average annual unit computer energy (sleep feature enabled, computer turned off at night): ",70.7, kWh,
+"Average annual unit computer energy (sleep feature not enabled, computer turned off at night): ",143.0, kWh,
+"Average annual unit monitor energy (sleep feature enabled, monitor turned off at night):",31.7, kWh,
+"Average annual unit monitor energy (sleep feature not enabled, monitor turned off at night): ",66.5, kWh,
+Average estimated kWh per load,0.96,kWh,"Assumes 295 loads/yr, 289 kWh/yr for machine energy and dryer energy. Data is being referenced in support of assessing energy savings from washing clothes in cold water only so water heating energy is excluded - see 'Personal GHG Calculator' line 137"
+Average energy consumption of a household dryer ,769,kWh/year,
+Average premium of green power per kWh,$0.02,dollars,
+Annual kWh savings per lamp ,33,kWh,Replacing 43 watt incandescent light bulbs with 13 watt compact fluorescents: Assumes that lights are on for 3 hours per day.
+Annual energy cost saving per lamp,$4.00,dollars,Replacing 43 watt incandescent light bulbs with 13 watt compact fluorescents: Assumes that lights are on for 3 hours per day.
+Average kWh/year ENERGY STAR refrigerator,488,kWh/year,
+Average kWh/year old refrigerator ,810,kWh/year,2000 refrigerator with a unit energy consumption of 704 kWh/yr multiplied by a 1.1507 degradation factor. - based on AHAM data
+Average kWh savings for refrigerator replacement,322,kWh/year,Difference between 2000 refrigerator with a unit energy consumption of 704 kWh/yr multiplied by a 1.1507 degradation factor and an ENERGY STAR refrigerator (488 kWh/year).
+Average emission savings for natural gas from replacing boiler/furnace,728.0,lbs/year,Replacing a 15 year old standard 80 AFUE boiler or 78 AFUE furnace with current ENERGY STAR boiler at 90 AFUE or Furnace at 95 AFUE in the North and 90 AFUE in the South
+Average emission savings for fuel oil from replacing boiler/furnace,1056.0,lbs/year,Replacing a 20 year old standard 80 AFUE boiler or 78 AFUE furnace with current ENERGY STAR boiler at 87 AFUE or Furnace at 85 AFUE
+Annual energy cost savings from switching to a boiler,$78.34,dollars,Annual cost savings of replacing a standard gas/oil boiler/furnace with ENERGY STAR boiler/furnace
+Average annual energy savings from switching single pane windows to low-e ENERGY STAR windows ,"25,210,000",BTUs,"Assumes 2000 square-foot house, 300 square feet of glass. Source: ENERGY STAR. Methodology based on RESFEN 3.1 calculations performed by Lawrence Berkeley National Laboratory (LBNL), 2005."
+Average annual energy cost savings from changing to ENERGY STAR windows (ranges from $150-$500 depending on climate),$150.00,dollars,$150 is low end of the $150-$500 range.
+Ratio of CO2 to Carbon,3.67,"Ratio of CO2 to C, 44/12",
+Btu per Quadrillion Btu,1000000000000000,Btu/QBtu ,
+Conversion from teragrams to pounds,"2,204,622,620",lbs/teragram,
+Conversion from metric tons to lbs,"2,204.62",lbs / metric ton,
+Conversion from thousand cubic feet of natural gas to therms,10,therms/thousand cf,"1 therm = 100,000 Btu"
+Conversion from liters to gallons,0.2642,gallons/liter,
+Energy content per 1000 cubic feet of natural gas,"1,023,000",Btu/1000 cf natural gas,HHV
+Energy content per kWh of electricity,3412,Btu/kWh ,HHV
+MMBtu per barrel of fuel oil,5.825,MMBtu/barrel,
+Fuel oil conversion - barrels per liter,0.00629,barrels/L,
+Energy content per gallon of fuel oil,"138,691.09",Btu/gallon fuel oil,HHV
+MMBtu per barrel of propane,3.836,MMBtu/barrel,
+Propane conversion - barrels per liter,0.00629,barrels/liter,
+Energy content per gallon of propane,"91,335.94",Btu/gallon propane,HHV
+Average members/household,2.57,people,

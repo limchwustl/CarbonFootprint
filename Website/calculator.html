@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/calculator.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint</title>
+</head>
+<body>
+    <div id="help-modal">
+        <div id="help-modal-content">
+            <span class="close">&times;</span>
+            <p style="text-align: center; font-size: small;">
+                <br/>
+                <br/>
+                How did we come up with the calculation?
+                Well, According to the United States Environmental Protection Agency,
+                we found an estimate of carbon emission of a person from their vehicle usage, electricity bills and recycling.</br>
+                The calculation for average emission of a vehicle of X miles is:<br/>
+                <p style="color: #0049B7; text-align: center; font-size: small;">X miles * (1 gallon / 21.6 miles) * (19.6 CO2 / 1 gallon)</p>
+                <p style="text-align: center; font-size: small;">The calculation for electricity for X amount of dollars is:</p>
+                <p style="color: #0049B7; text-align: center; font-size: small;">X dollars * (1 kWh / 0.1188 dollars) * ((factor varying by region) CO2 / kWh)</p>
+               <p style="text-align: center; font-size: small;">
+                For waste, the estimate is about 692 lbs of CO2 per person.<br/>
+                When a person recycles metal, we can subtract 89.38 lbs, 34.56 lbs when they are
+                recycling plastic. If they are recycling glass, subtract 25.39 lbs and if they are
+                recycling paper, subtract 113.14 lbs.
+                We hope you look at your numbers and continue to reduce carbon emission for the environment!
+               </p> 
+            </p>
+            
+        </div>
+        
+    </div>
+    <div id="nav">
+        <h1 >
+          <a id = title href="index.html">Carbon FootPrint</a>
+        </h1>
+        
+        
+        <div id = "nav-links">
+            <a href="https://youtu.be/sh5mEz3o22k">VIDEO</a>
+          <a href="https://csex57.github.io/carbonfootprint/ProcessBook/proposal.html">PROCESS BOOK</a>
+            <a href="index.html">HOME</a>
+            <a href="calculator.html">CALCULATOR</a>
+        </div>
+        
+    </div>
+   
+    
+    <div id="initial-questions">
+        <h2>Let's begin with a simple question. </br> What is your zipcode?</h2>
+        
+            <div id="zipcode-input-div">
+                <input type="number" id="zipcode" name="zipcode" placeholder="What is your Zipcode?" value="63108">
+                <input id="zipcode-submit-button" class="submit-button" type="submit" name="submit" value="Enter">
+            </div>
+          
+    
+    </div>
+  
+    <div id="calculator-container" hidden>
+        <h2>Now let's put in some serious information.</h2>
+       
+    <div id="calculator">
+        
+        <form id="calculator-form">
+          <div>
+            <label for="gallon-per-year">How many miles do you drive a day?</label>
+            <input type="number" id="gallon-per-year" step="0.01" name="gallon-per-year" value ="30"> 
+          </div>
+          <div>
+            <label for="electricity-per-year">What is your monthly electricity bill? </label>
+           
+            <input type="number" id="electricity-per-year" step="0.01" name="electricy-per-year" value="22" checked="True"> 
+          </div>
+          <div>
+            <label >Do you recycle? Select materials you recycle:  </label>
+            <label for="metal">metal</label>
+            <input type="checkbox" id="metal" name="metal">
+            <label for="plastic">plastic</label>
+            <input type="checkbox" id="plastic" name="plastic">
+            <label for="glass">glass</label>
+            <input type="checkbox" id="glass" name="glass">
+            <label for="paper">paper</label>
+            <input type="checkbox" id="paper" name="paper">
+          </div>
+          <div id="calculator-submit-btn">
+            <input  class="submit-button" type="submit" name="submit">
+          </div>
+          
+          
+        </form>
+        <div style="margin-top:2rem;">
+
+            <p style="text-align: center; font-size: small;">Did You Know?</p>
+            <p style="text-align: center; font-size: small;">The average of miles driven per day for a person in America is about 31.28 miles</p>
+           <p style="text-align: center; font-size: small;">The average monthly cost of natural gas per household of one person in America is about 43.61 dollars</p>
+        </div>
+       
+    </div>
+</div>
+
+    <div id="container">
+        <div id="calculator-graph-container" hidden>
+            <div class="result-header">
+
+                <h2>This is how much carbon you emit per year!</h2>
+            <button class="result-help-btn">What is all this?
+            </button>
+            </div>
+            
+            <div id="calculator-graph-box" >
+            
+                <div id="calculator-graph"> </div>
+                <p id="comment"></p>
+            </div>
+            <h2 id="bubble-chart-title">CO2 emission per capita in World</h2>
+
+        </div>
+        
+        
+        <div id="recommendation-form-container" hidden>
+            <div id="recommendation-form">
+                <h2>What Can You Do To Reduce Household Carbon Emission ?</h2>
+          
+                <label for="bicycle">Going to work with bicycle</label>
+                <input type="checkbox" id="bicycle" name="bicycle" hidden>
+                <label for="work-distance">Miles from your house to work</label>
+                <input type="number" id="work-distance" name="work-distance" placeholder="0" value = 0>
+                <div>
+                    <label for="ac">Not using the A/C</label>
+                    <input type="checkbox" id="ac" name="ac"> 
+                </div>
+                <div>
+                    <label for="sleepFeatureComputer">Sleep Mode on the Computerr</label>
+                    <input type="checkbox" id="sleepFeatureComputer" name="sleepFeatureComputer"> 
+                </div>
+                
+               
+                <input type="checkbox" id="lamp" name="lamp" hidden>
+                <label for="number-of-lamps"> Turning off lights in your house </br> Number of lights: </label>
+                <input type="number" id="number-of-lamps" name="number-of-lamp" placeholder="0" value=0>
+
+            </div>
+            
+            
+        </div>
+    </div>
+        
+            
+                
+
+            
+       
+        <div hidden>
+
+            <h2>Is This Important?</h2>
+            <p>According to the latest U.N. report, the world now has 80 billion people.
+                Change of one individual's lifestyle might be miniscule. But what if everyone did change their lifestyle like you?
+                Here is the graph of the difference that a change in lifestyle of collective people can bring.
+            </p>
+        </div>
+       
+        <div id="bubble-chart-container">
+            
+            <div id="bubble-chart" hidden></div>
+            <div id="bubble-chart-info-container" hidden>
+
+                <div id="bubble-chart-info">
+                    <p id="hoverText-country"></p>
+                    <p id="hoverText-pop"></p>
+                    <p id="hoverText-co2"></p>
+                </div>
+            </div>
+            
+        </div>
+       
+
+
+<script src="js/d3.min.js"></script>
+<script src="js/bubbleChart.js"></script>
+<script src="js/calculatorGraph.js"></script>
+<script src="js/calculatorMain.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,208 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Fredoka;
+  src: url(../assets/fonts/FredokaOne-Regular.ttf);
+}
+@font-face {
+  font-family: Acre;
+  src: url(../assets/fonts/Jonathan\ Ball\ -\ Acre-Medium.otf);
+}
+@font-face {
+  font-family: Helvetica;
+  src: url(../assets/fonts/Helvetica.ttf);
+}
+#tooltip {
+  position: absolute;
+  margin: auto;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  opacity: 0;
+}
+.tooltip-title{
+    font-size:18px;
+    font-family: "Arial Black";
+
+}
+body {
+  font-family:Helvetica, Geneva, Tahoma, sans-serif;
+  background: #f0f5fb;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+    font-family: 'Acre',Arial, Helvetica, sans-serif;
+    color: #2CBAE7;
+}
+.title{
+  text-align: center;
+    font-family: 'Acre',Arial, Helvetica, sans-serif;
+    color: #2CBAE7;
+}
+#title1{
+  padding-left: 60px;
+  font-family: 'Fredoka',Arial, Helvetica, sans-serif;
+  color: #fffffe;
+  margin-top: 10px;
+}
+.imgModal {
+  width: 20px;
+}
+#init-modal{
+  display:block;
+  position:fixed;
+  left:0;
+  right:0;
+  width:100%;
+  height:100%;
+  overflow: auto; 
+  background-color: black;
+  background-color: rgba(0,0,0,0.2); 
+  z-index: 1;
+}
+#init-modal-content{
+  height:auto;
+  width:50%;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius:10px;
+  border:0;
+  box-shadow:4px 4px 5px
+  rgba(0,0,0,0.1);
+  background-color: #fffffe;
+}
+.close {
+  color: #2cbae7;
+  float: bottom;
+  font-weight: bold;
+  font-size: 24px;
+  border: 2px solid #2cbae7;
+  border-radius: 10px;
+  
+}
+
+.close:hover, .close:focus {
+  color: red;
+  border: 2px solid red;
+  text-decoration: none;
+  cursor: pointer;
+}
+#sub-title{
+  text-align: center;
+  font-family: 'Acre',Arial, Helvetica, sans-serif;
+  color: #fffffe;
+  margin-bottom: 0px;
+}
+#nav-links{
+  padding-right: 20px;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 20px;
+  
+}
+
+#nav{
+  display: flex;
+  overflow: hidden;
+  height:80px;
+  background-color: #2CBAE7;
+  justify-content: space-between;
+  
+  
+ 
+}
+a{
+  text-decoration: none;
+  color:#fffffe;
+  font-family: 'Acre',Arial, Helvetica, sans-serif;
+
+}
+
+.container-fluid {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+rect {
+  pointer-events: all;
+}
+img {
+  padding-top: 10px;
+}
+.line {
+  /* pointer-events: none; */
+  stroke-width: 3px;
+}
+.line-small {
+  stroke-width: 1px;
+}
+.tempLabel {
+  color: #ff68ee;
+  font-weight: bold;
+  font-size:large;
+}
+.co2Label {
+  color: #0b1f0e;
+  font-weight: bold;
+  font-size:large;
+}
+#buttonHolder {
+  justify-content: center;
+}
+.buttons {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 20px;
+  width: 33%;
+  font-size: 20px;
+ 
+  background: #2CBAE7; 
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+  color:#fffffe;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.xAxis-label {
+  text-anchor: middle;
+}
+
+.yAxis-label {
+  text-anchor: start;
+}
+
+.browser text {
+  text-anchor: end;
+}
+
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+  pointer-events: none;
+}
